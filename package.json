@@ -2,9 +2,12 @@
   "name": "t2-compiler",
   "version": "0.0.1",
   "description": "A server, VM and command line tool to pre-compile binaries for Tessel 2",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "grunt test"
+  },
+  "bin": {
+    "t2-identify": "./bin/t2-identify.js"
   },
   "repository": {
     "type": "git",
@@ -37,7 +40,6 @@
     "sinon": "^1.14.1"
   },
   "dependencies": {
-    "bluebird": "^3.1.1",
     "concurrent-couch-follower": "^1.0.1",
     "got": "^6.0.1",
     "gunzip-maybe": "^1.2.1",
