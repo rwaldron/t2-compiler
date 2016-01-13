@@ -2,9 +2,10 @@
   "name": "t2-compiler",
   "version": "0.0.1",
   "description": "A server, VM and command line tool to pre-compile binaries for Tessel 2",
-  "main": "./lib/index.js",
+  "main": "./lib/server.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node ./lib/server.js"
   },
   "bin": {
     "t2-identify": "./bin/t2-identify.js"
@@ -37,6 +38,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jsbeautifier": "^0.2.10",
     "grunt-jscs": "^2.3.0",
+    "proxyquire": "^1.7.3",
     "sinon": "^1.14.1"
   },
   "dependencies": {
